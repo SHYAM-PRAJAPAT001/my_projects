@@ -1,6 +1,6 @@
 // LeetCode 213 - House Robber II
 
-class Solution {
+class q2 {
 
     public int rob(int[] nums) {
         int n = nums.length;
@@ -25,5 +25,13 @@ class Solution {
         int notTake = dfs(i + 1, end, nums, memo);
 
         return memo[i] = Math.max(take, notTake);
+    }
+
+    public static void main(String[] args) {
+        q2 obj = new q2();
+
+        int[] nums = {2, 3, 2};
+
+        System.out.println(obj.rob(nums));
     }
 }
