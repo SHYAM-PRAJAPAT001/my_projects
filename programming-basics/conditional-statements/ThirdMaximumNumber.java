@@ -1,0 +1,37 @@
+// Leetcode Problem: 414. Third Maximum Number
+public class ThirdMaximumNumber {
+
+
+    private long MAX = Long.MIN_VALUE ; 
+    public int thirdMax(int[] nums) {
+        
+        long firstMax = MAX ; 
+        long secondMax = MAX ; 
+        long thirdMax = MAX ; 
+        int size = nums.length ; 
+
+        for(int pos = 0 ; pos < size ; pos++) {
+
+            if(firstMax < nums[pos]) {
+                thirdMax = secondMax ; 
+                secondMax = firstMax ; 
+                firstMax = nums[pos] ; 
+            } else if(secondMax < nums[pos] && nums[pos] < firstMax) {
+                thirdMax = secondMax ; 
+                secondMax = nums[pos] ; 
+            } else if(thirdMax < nums[pos] && nums[pos] < secondMax) {
+                thirdMax = nums[pos] ; 
+            }
+        }
+
+        if(thirdMax == MAX) return (int)firstMax ; 
+
+        return (int)thirdMax ; 
+    }
+
+    public static void main(String[] args) {
+        ThirdMaximumNumber obj = new ThirdMaximumNumber();
+        int[] nums = {3, 2, 1};
+        System.out.println(obj.thirdMax(nums)); // Output: 1
+    }
+}
