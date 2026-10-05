@@ -1,6 +1,6 @@
 // LeetCode 322 - Coin Change
 
-class Solution {
+class q5 {
 
     public int coinChange(int[] coins, int amount) {
 
@@ -37,5 +37,15 @@ class Solution {
         }
 
         return memo[amount] = minCoins;
+    }
+
+    public static void main(String[] args) {
+
+        q5 obj = new q5();
+
+        int[] coins = {1, 2, 5};
+        int amount = 11;
+
+        System.out.println(obj.coinChange(coins, amount));
     }
 }
