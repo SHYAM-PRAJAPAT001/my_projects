@@ -1,6 +1,5 @@
-// Leetcode Problem 412: Fizz Buzz 
 import java.util.* ; 
-public class FizzBuzz {
+public class Leetcode412 {
 
     public static List<String> fizzBuzz(int n) {
         List<String> ans = new ArrayList<>();

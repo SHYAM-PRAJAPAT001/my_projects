@@ -1,6 +1,4 @@
-// Leetcode Problem: 414. Third Maximum Number
-public class ThirdMaximumNumber {
-
+public class Leetcode414 {
 
     private long MAX = Long.MIN_VALUE ; 
     public int thirdMax(int[] nums) {
