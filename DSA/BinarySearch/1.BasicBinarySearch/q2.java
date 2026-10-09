@@ -1,6 +1,6 @@
 // LeetCode 35 - Search Insert Position
 
-class Solution {
+class q2 {
     public int searchInsert(int[] nums, int target) {
         int l = 0, r = nums.length - 1;
         int ans = nums.length;

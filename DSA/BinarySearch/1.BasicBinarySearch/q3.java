@@ -1,6 +1,6 @@
 // LeetCode 34 - Find First and Last Position of Element in Sorted Array
 
-class Solution {
+class q3 {
 
     private int first(int[] nums, int target) {
         int l = 0, r = nums.length - 1, ans = -1;

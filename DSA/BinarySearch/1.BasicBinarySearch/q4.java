@@ -1,6 +1,6 @@
 // LeetCode 374 - Guess Number Higher or Lower
 
-public class Solution {
+public class q4 {
     public int guessNumber(int n) {
         int l = 1, r = n;
 

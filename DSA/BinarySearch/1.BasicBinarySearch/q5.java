@@ -1,6 +1,6 @@
 // LeetCode 69 - Sqrt(x)
 
-class Solution {
+class q5 {
     public int mySqrt(int x) {
         long l = 0, r = x, ans = 0;
 

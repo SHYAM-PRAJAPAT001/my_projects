@@ -1,6 +1,6 @@
 // LeetCode 704 - Binary Search
 
-class Solution {
+class q1 {
     public int search(int[] nums, int target) {
         int l = 0, r = nums.length - 1;
 

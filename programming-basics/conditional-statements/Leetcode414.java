@@ -28,7 +28,7 @@ public class Leetcode414 {
     }
 
     public static void main(String[] args) {
-        ThirdMaximumNumber obj = new ThirdMaximumNumber();
+        Leetcode414 obj = new Leetcode414();
         int[] nums = {3, 2, 1};
         System.out.println(obj.thirdMax(nums)); // Output: 1
     }
